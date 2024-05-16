@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Spring Learning"
+date: 2023-10-8
+---
 # Spring boot学习
 
 ## 补充：工厂模式

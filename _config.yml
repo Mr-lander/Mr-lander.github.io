@@ -2,7 +2,7 @@
 title: 杨俣豪website
 description: 保持好奇
 url: https://github.com/Mr-lander/
-avatar: /assets/images/avatar.jpg
+avatar: /assets/images/avatar.png
 paginate: 5
 permalink: pretty
 cover_image: /assets/images/bg1.jpeg
@@ -33,7 +33,7 @@ twitter:
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: yuhao yang
   links:
     - https://twitter.com/Lugent_jilu
     - https://github.com/Mr-lander
@@ -57,7 +57,3 @@ author:
   name: Songzi Vong
   url: https://github.com/vszhub/
   email: vszhub@gmail.com
-categories: Blog
-tags:
-  - introduction
-  - first post
