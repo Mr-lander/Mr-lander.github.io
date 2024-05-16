@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "not-pure-poole"
   spec.version       = "0.1.0"
-  spec.authors       = ["Mark Otto", "YuHao Yang"]
+  spec.authors       = ["Mark Otto", "Yuhao Yang"]
   spec.email         = ["markdotto@gmail.com", "20214223@stu.cqu.edu.cn"]
 
   spec.summary       = "yyh"
