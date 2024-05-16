@@ -8,7 +8,7 @@
 
 但是在new之前可以再新建一个**工厂层**，通过给工厂层传入信息（比如类名、参数初始化条件等）来返回所需实例对象。
 
-![image-20230614163817952](Spring boot学习.assets/image-20230614163817952.png)
+![image-20230614163817952](/assets/images/image-20230614163817952.png)
 
 > new一个工厂，用函数getComputer(电脑名，显卡信息...)来返回实例对象。
 >
@@ -22,24 +22,24 @@
 这里举几个例子：
 
 ```java
-   /** 
-     * 常用知识点：在类或者方法上使用 @RequestMapping 注解 
-     * 若没有修饰类，则访问路径是: http://ip:port/项目名/方法的@RequestMapping值 
-     * 若类有修饰类，则访问路径是: http://ip:port/项目名/类的@RequestMapping值/方法的@RequestMapping值 
-     */  
-      
-    /** 
-     * 方法中用map作为参数，可以将数据存储到request作用域中，放回到页面上。 
-     * 同样用法的有  Model 类型 和  ModelMap 类型 
-     */  
-    @RequestMapping("/testMapResult")  
-    public String testMapResult(Map<String, Object> map, Model model, ModelMap modelMap){  
-        String apiDocs = "Map,Model,ModelMap (常用方法) : 在方法中添加Map的参数，可以将数据放到request 作用域中！";   
-        map.put(RESULT_KEY, apiDocs);  
-        model.addAttribute("model", "Model");  
-        modelMap.addAttribute("modelMap", "ModelMap");  
-        return SUCCESS;  
-    }  
+   /**
+     * 常用知识点：在类或者方法上使用 @RequestMapping 注解
+     * 若没有修饰类，则访问路径是: http://ip:port/项目名/方法的@RequestMapping值
+     * 若类有修饰类，则访问路径是: http://ip:port/项目名/类的@RequestMapping值/方法的@RequestMapping值
+     */
+
+    /**
+     * 方法中用map作为参数，可以将数据存储到request作用域中，放回到页面上。
+     * 同样用法的有  Model 类型 和  ModelMap 类型
+     */
+    @RequestMapping("/testMapResult")
+    public String testMapResult(Map<String, Object> map, Model model, ModelMap modelMap){
+        String apiDocs = "Map,Model,ModelMap (常用方法) : 在方法中添加Map的参数，可以将数据放到request 作用域中！";
+        map.put(RESULT_KEY, apiDocs);
+        model.addAttribute("model", "Model");
+        modelMap.addAttribute("modelMap", "ModelMap");
+        return SUCCESS;
+    }
 ```
 
 
@@ -79,7 +79,7 @@ Bean是一个特殊的类，其必须包含：
 ```
 javaCopy codepublic class Car {
     private Engine engine;
-    
+
     public Car() {
         engine = new Engine();
     }
@@ -93,7 +93,7 @@ javaCopy codepublic class Car {
 ```
 javaCopy codepublic class Car {
     private Engine engine;
-    
+
     public Car(Engine engine) {
         this.engine = engine;
     }
@@ -133,7 +133,7 @@ javaCopy codepublic class Car {
 
 在此示例中，我提交的只是author、reader等等零散的字段内容。springboot为尝试使用你提交的内容，调用setauthor()、setreader()的方法将你提交的`属性`整合为一个`实体book`。
 
-但是需要在注入前设定`@ModelAttribute` 
+但是需要在注入前设定`@ModelAttribute`
 
 
 
@@ -224,7 +224,7 @@ Class<? extends Payload>[] payload() default {};
 >
 > 1. 定义注解接口
 >
->    ：使用 
+>    ：使用
 >
 >    ```
 >    @interface
