@@ -1,7 +1,7 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
+title: 杨俣豪个人简介
+description: 保持好奇
+url: https://github.com/Mr-lander/
 avatar: /assets/images/avatar2.png
 paginate: 5
 permalink: pretty
@@ -29,14 +29,14 @@ exclude:
 
 # Optimize Jekyl SEO Tag
 twitter:
-  username: vszhub
+  username: Lugent_jilu
   card: summary
 logo: logo.png
 social:
   name: Songzi Vong
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://twitter.com/Lugent_jilu
+    - https://github.com/Mr-lander
 google_site_verification: xxxxx
 lang: en
 
