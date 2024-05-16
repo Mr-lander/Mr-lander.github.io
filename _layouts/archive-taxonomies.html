@@ -51,6 +51,10 @@ layout: default
   </ul>
 </div>
 
+<div>
+  <a href="/assets/resume.pdf">Download Resume PDF</a>
+</div>
+
 {% comment %} Show posts by taxonomy {% endcomment %}
 {%- for i in (1..max_count) reversed -%}
   {%- for taxonomy in taxonomies -%}
@@ -65,8 +69,6 @@ layout: default
           {{ taxonomy_name }}
         {%- endif -%}
       </h2>
-      <h2>Resume</h2>
-      <p>Download my resume: <a href="/assets/resume.pdf" target="_blank">Resume PDF</a></p>
       <ul class="post-list-by-taxonomy">
         {%- for post in posts -%}
           <li>
